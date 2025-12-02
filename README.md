@@ -1,7 +1,7 @@
-# VERILOG_PRACTICE
+# VERILOG
 Verilog is a hardware description language used to model and design digital systems. It allows engineers to describe the behavior and structure of electronic systems, such as integrated circuits and FPGA-based designs. Verilog is widely used in digital design, verification, and synthesis processes for creating hardware models, simulations, and testbenches. It's known for its ability to describe complex digital systems and its role in the design and verification of electronic circuits.
 
-# Verilog Practice Lab — ModelSim Step-by-Step
+## Verilog Practice Lab — ModelSim Step-by-Step
 
 Welcome! This repository is a step-by-step Verilog practice guide built for beginners and intermediate learners who want to learn by doing and simulate designs using **ModelSim**.
 
@@ -31,3 +31,13 @@ Each exercise folder contains:
 8. Run simulation: use `run <time>` in the Transcript (e.g., `run 200ns`) or press the Run buttons.
 9. Analyze waveform: zoom, measure, and take screenshots if needed.
 10. Iterate: change `design.v` → recompile → re-run. Use assertions in the testbench for automated checks.
+
+## Contribution
+
+Contributions are welcome! Feel free to open PRs for new topics, better explanations, or additional exercises.
+
+---
+
+Happy Coding and Learning!
+
+ALL THE BEST!!
