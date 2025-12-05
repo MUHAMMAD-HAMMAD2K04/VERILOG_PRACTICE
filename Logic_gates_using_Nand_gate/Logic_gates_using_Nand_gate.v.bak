@@ -1,0 +1,72 @@
+module Logic_gates_using_Nand(output [5:0] y, input a,b);
+
+ wire w1,w2,w3,w4,w5,w6;
+
+ // Not_Gate
+
+ Nand_Gate n1(y[0],a,a); // Nand_Gate n1(y[0],b,b); In both ways we can make a Nand Gate
+
+
+ // And_Gate 
+
+ Nand_Gate n2(w1,a,b);
+ Nand_Gate n3(y[1],w1,w1);
+
+ // Or_Gate
+ 
+ Nand_Gate n4(w2,a,a);
+ Nand_Gate n5(w3,b,b);
+ Nand_Gate n6(y[2],w2,w3);
+
+ // Nor_Gate
+
+ Nand_Gate n7(y[3],y[2],y[2]); //Here, i am using Or_Gate Result and Nand_Gate as an Inverter to Make Nor_Gate
+
+   //Two Way to make Nor_Gate
+/*
+ Nand_Gate n7(w4,a,a);
+ Nand_Gate n8(w5,b,b);
+ Nand_Gate n9(w6,w4,w5);
+ Nand_Gate n10(y[3],w6,w6);
+*/
+
+ //Xor_Gate
+
+ Nand_Gate n8(w4,a,b);
+ Nand_Gate n9(w5,w4,a);
+ Nand_Gate n10(w6,w4,b);
+ Nand_Gate n11(y[4],w5,w6);
+
+ //Xnor_Gate
+
+ Nand_Gate n12(y[5],y[4],y[4]); // Here, I am making Xnor_Gate just like above. I'm Inverting Xor's output to make it a Xnor_Gate.
+
+endmodule
+
+
+ module Nand_Gate(output y, input a,b);
+
+ nand n1(y,a,b);
+
+ endmodule
+
+
+
+module Logic_gates_using_Nand_tb;
+reg a,b;
+wire [5:0] y;
+
+Logic_gates_using_Nand dut(y,a,b);
+
+initial 
+begin
+a=1'b0; b=1'b0; #10;
+$display(" A = %b, B = %b, Y[0] = %b, Y[1] = %b, Y[2] = %b, Y[3] = %b, Y[4] = %b, Y[5] = %b", a,b,y[0],y[1],y[2],y[3],y[4],y[5]);
+a=1'b0; b=1'b1; #10;  
+$display(" A = %b, B = %b, Y[0] = %b, Y[1] = %b, Y[2] = %b, Y[3] = %b, Y[4] = %b, Y[5] = %b", a,b,y[0],y[1],y[2],y[3],y[4],y[5]);
+a=1'b1; b=1'b0; #10;
+$display(" A = %b, B = %b, Y[0] = %b, Y[1] = %b, Y[2] = %b, Y[3] = %b, Y[4] = %b, Y[5] = %b", a,b,y[0],y[1],y[2],y[3],y[4],y[5]);
+a=1'b1; b=1'b1; #10;  
+$display(" A = %b, B = %b, Y[0] = %b, Y[1] = %b, Y[2] = %b, Y[3] = %b, Y[4] = %b, Y[5] = %b", a,b,y[0],y[1],y[2],y[3],y[4],y[5]);
+end
+endmodule
