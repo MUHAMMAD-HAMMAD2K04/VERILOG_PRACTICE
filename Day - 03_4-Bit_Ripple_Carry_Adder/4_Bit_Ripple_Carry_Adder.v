@@ -25,7 +25,7 @@ endmodule
 
 /*module Full_Adder_RTL_Level(output s,cout, input a,b,cin);
 
-assign cout = (a&b) | ((a^b) & cin); Cout result
+assign cout = (a & b) | (a & cin) | (b & cin); Cout result
 assign s = a^b^cin; Sum Result
 
 endmodule*/
