@@ -49,10 +49,14 @@ CTRL = 0 → B remains same → A + B
 CTRL = 1 → B becomes ~B and carry-in adds +1 → A - B
 
 ## 📊 2. Operation Table (Addition vs Subtraction)
-CTRL	Operation	Effective B	Meaning
-0	Addition	B	A + B
-1	Subtraction	~B + 1	A – B
+
+| CTRL | Operation   | Effective B | Meaning |
+| ---- | ----------- | ----------- | ------- |
+| 0    | Addition    | B           | A + B   |
+| 1    | Subtraction | ~B + 1      | A – B   |
+
 ## 🧩 3. Architecture Overview
+
 ✔ Gate Function
 
 For each bit:
@@ -86,6 +90,7 @@ Easy to modify
 ![\[N-Bit Adder–Subtractor Simulation Output\]](Nth_Bit_Adder_Subtractor_Output.PNG)
 
 ## 🧾 6. Verilog Code Explanation
+
 Full Adder RTL
 assign {S,Cout} = {A^B^Cin,(A&B)|(B&Cin)|(Cin&A)};
 
