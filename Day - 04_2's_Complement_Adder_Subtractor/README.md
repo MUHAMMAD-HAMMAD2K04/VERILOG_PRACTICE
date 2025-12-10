@@ -1,6 +1,6 @@
-# ➕ N-Bit Adder–Subtractor (Parameterized)
+# ➕ 2's_Complement_Adder–Subtractor (Parameterized)
 
-The N-bit Adder–Subtractor is a configurable arithmetic module that performs both addition and subtraction depending on the control signal.
+The 2's_Complement_Adder–Subtractor is a configurable arithmetic module that performs both addition and subtraction depending on the control signal.
 This module is parameterized using:
 
 parameter SIZE = 4
@@ -82,12 +82,12 @@ Easy to modify
 ## 🔌 4. Circuit Concept (Insert Image)
 
 📷 Add your block diagram or ripple-carry structure image here
-![\[N-Bit Adder–Subtractor Diagram\]](Ckt_Diagram.jpg)
+![alt text](Ckt_Diagram.jpg)
 
 ## 🖥️ 5. Simulation Snapshot
 
 📷 Add waveform or ModelSim console output here
-![\[N-Bit Adder–Subtractor Simulation Output\]](Nth_Bit_Adder_Subtractor_Output.PNG)
+![alt text](2's_Complement_Adder_Subtractor_Output.PNG)
 
 ## 🧾 6. Verilog Code Explanation
 
