@@ -147,4 +147,3 @@ This design is intended for **learning, simulation, and interview preparation**.
 
 ---
 
-📌 *Add circuit diagrams and waveform images to make this README visually complete and easy to understand.*
