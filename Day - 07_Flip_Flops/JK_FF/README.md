@@ -103,7 +103,8 @@ Example Output Format
 ini
 Copy code
 Clk = 1, J = 1, K = 1, Q = 0, Q_bar = 1
-🎯 7. Purpose of This Module
+
+## 🎯 7. Purpose of This Module
 This JK Flip-Flop module helps in understanding:
 
 Edge-triggered sequential logic
