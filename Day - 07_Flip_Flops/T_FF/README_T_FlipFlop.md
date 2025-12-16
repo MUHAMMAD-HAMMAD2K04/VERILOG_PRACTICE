@@ -43,9 +43,9 @@ Outputs:
 
 ## 🔌 3. Circuit Diagram
 
-📷 *Insert T Flip-Flop circuit diagram here*
+📷 ![*Insert T Flip-Flop circuit diagram here*](T-FF_Circuit_Diagram.png)
 
-![Suggested file name: `T_FF_Circuit_Diagram.png`](Ckt_Diagram.jpg)
+Suggested file name: `T_FF_Circuit_Diagram.png`
 
 ---
 
