@@ -27,6 +27,16 @@ Demultiplexers are commonly used in:
 
 ---
 
+## Output Wavefoam
+
+![alt text](Output_wavefoam.png)
+
+## Truth Table And Ckt_Diagram
+
+![alt text](Ckt_Diagram.png)
+
+---
+
 ## ⚙️ Functional Behavior
 
 - When `S = 0`, input `A` is routed to `Y0`
