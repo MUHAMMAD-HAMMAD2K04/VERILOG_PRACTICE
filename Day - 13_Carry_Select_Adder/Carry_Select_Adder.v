@@ -60,8 +60,6 @@ A = 4'h5; B = 4'hA; Cin = 0; #10;
 A = 4'h5; B = 4'hA; Cin = 1; #10;
 
 
-
-
 end
 endmodule
 
